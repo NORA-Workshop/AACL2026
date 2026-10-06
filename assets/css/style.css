@@ -968,3 +968,20 @@ html {
         transform: translateX(-50%);
     }
 }
+
+/* Two-column reviewers list */
+.reviewers-list {
+    columns: 2;
+    column-gap: 40px;
+}
+
+.reviewers-list li {
+    break-inside: avoid;
+    margin-bottom: 6px;
+}
+
+/* One column on phones */
+@media (max-width: 768px) {
+    .reviewers-list {
+        columns: 1;
+    }
